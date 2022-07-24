@@ -1,0 +1,12 @@
+{
+  "TestCase_id":"1",
+  "Title":"User should be able to login with valid email",
+  "Steps":
+  {
+    "1":"Go to https://web.gobrief.com",
+    "2":"Push Sign in button",
+    "3":"Input test.123@yahoo.com in Enter your email field",
+    "4":" Push Next button"
+  },
+  "Expected result":"Successful login, redirected to app dashboard"
+}
