@@ -1,0 +1,14 @@
+{
+  "Bug_id":"1",
+  "Priorty":"High",
+  "Summary":"User can't to login with valid email",
+  "Steps to reproduce":
+  {
+     "1":"Go to https://web.gobrief.com",
+     "2":"Push Sign in button",
+     "3":"Input test.123@yahoo.com in Enter your email field",
+     "4":" Push Next button"
+   },
+  "Expected result":"Successful login, redirected to app dashboard",
+  "Actual result":"Redirected to Check you email page where 5-digit confirmation code is required to resume"
+}
