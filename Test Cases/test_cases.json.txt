@@ -1,12 +1,63 @@
 {
   "TestCase_id":"1",
+  "Title":"User should be able to create account with valid email ",
+  "Steps":
+  {
+   "1":"Go to https://web.gobrief.com",
+   "2":"Push Create account button",
+   "3":"Input test1.en@gmail.com in Enter your work email field",
+   "4":"Enter 5-digit confirmation code sent to email in Enter code field",
+   "5":"Input Name in Your Name field",
+   "6":"Input 'Test 1' in Project name field",
+   "7":"Push Next button"
+  },
+  "Expected result":"Successful user creation, redirected to app dashboard"
+}
+
+
+{
+  "TestCase_id":"2",
+  "Title":"User shouldn't be able to create account with invalid email ",
+  "Steps":
+  {
+    "1":"Go to https://web.gobrief.com",
+    "2":"Push Create account button",
+    "3":"Input o432414@yahoo.com in Enter your work email field",
+    "4":"Push Next button"
+  },
+  "Expected result":"User friendly error message - invalid email"
+}
+
+
+{
+  "TestCase_id":"3",
+  "Title":"User shouldn't be able to create account with already existing user",
+  "Steps":
+  {
+  "1":"Access "https://web.gobrief.com",
+  "2":"Push "Create account" button",
+  "3":"Input test1.en@gmail.com in "Enter your work email" field",
+  "4":"Push Next button"
+  },
+  "Expected result":"User friendly error message - already existing user with this email address"
+}
+	
+
+{
+  "TestCase_id":"4",
   "Title":"User should be able to login with valid email",
   "Steps":
   {
     "1":"Go to https://web.gobrief.com",
     "2":"Push Sign in button",
-    "3":"Input test.123@yahoo.com in Enter your email field",
-    "4":" Push Next button"
+    "3":"Input valid email in Enter your email field",
+    "4":"Push Next button"
   },
   "Expected result":"Successful login, redirected to app dashboard"
 }
+
+
+
+
+
+	
