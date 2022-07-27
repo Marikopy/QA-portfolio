@@ -34,9 +34,9 @@
   "Title":"User shouldn't be able to create account with already existing user",
   "Steps":
   {
-  "1":"Access "https://web.gobrief.com",
-  "2":"Push "Create account" button",
-  "3":"Input test1.en@gmail.com in "Enter your work email" field",
+  "1":"Go to https://web.gobrief.com",
+  "2":"Push Create account button",
+  "3":"Input test1.en@gmail.com in Enter your work email field",
   "4":"Push Next button"
   },
   "Expected result":"User friendly error message - already existing user with this email address"
