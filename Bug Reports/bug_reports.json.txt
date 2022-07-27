@@ -6,9 +6,45 @@
   {
      "1":"Go to https://web.gobrief.com",
      "2":"Push Sign in button",
-     "3":"Input test.123@yahoo.com in Enter your email field",
+     "3":"Input test1.en@gmail.com in Enter your email field",
      "4":" Push Next button"
    },
   "Expected result":"Successful login, redirected to app dashboard",
   "Actual result":"Redirected to Check you email page where 5-digit confirmation code is required to resume"
 }
+
+
+{
+  "Bug_id":"2",
+  "Priorty":"Medium",
+  "Summary":"User with invalid email redirected to Check you email page",
+  "Steps to reproduce":
+  {
+    "1":"Go to https://web.gobrief.com",
+    "2":"Push Create account button",
+    "3":"Input o432414@yahoo.com in Enter your work email field",
+    "4":"Push Next button"
+   },
+  "Expected result":"User friendly error message - invalid email",
+  "Actual result":"Redirected to Check you email page where 5-digit confirmation code is required to resume"
+}
+
+
+{
+  "Bug_id":"3",
+  "Priorty":"Medium",
+  "Summary":"Already existing user can to create account again",
+  "Steps to reproduce":
+  {
+    "1":"Go to https://web.gobrief.com",
+    "2":"Push Create account button",
+    "3":"Input test1.en@gmail.com in Enter your work email field",
+    "4":"Push Next button"
+   },
+  "Expected result":"User friendly error message - already existing user with this email address",
+  "Actual result":"User is redirected to Check you email page; asked to provide 5-digit confirmation code"
+}
+
+
+
+
