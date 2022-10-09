@@ -1,48 +1,77 @@
 {
   "Bug_id":"1",
-  "Priorty":"High",
-  "Summary":"User can't to login with valid email",
+  "Priorty":"Medium",
+  "Summary":"[Home page] Page not found error appears after user click on Shop Now button for Hero product",
   "Steps to reproduce":
   {
-     "1":"Go to https://web.gobrief.com",
-     "2":"Push Sign in button",
-     "3":"Input test1.en@gmail.com in Enter your email field",
-     "4":" Push Next button"
+     "1":"Open Home page",
+     "2":"Click on Shop Now button for Hero product",
    },
-  "Expected result":"Successful login, redirected to app dashboard",
-  "Actual result":"Redirected to Check you email page where 5-digit confirmation code is required to resume"
+  "Expected result":"Product Details page should open",
+  "Actual result":"Page not found error appears"
 }
 
 
 {
   "Bug_id":"2",
   "Priorty":"Medium",
-  "Summary":"User with invalid email redirected to Check you email page",
+  "Summary":"[Product Details page] Quantity picker button mixed up when user change quantity product",
   "Steps to reproduce":
   {
-    "1":"Go to https://web.gobrief.com",
-    "2":"Push Create account button",
-    "3":"Input o432414@yahoo.com in Enter your work email field",
-    "4":"Push Next button"
+    "1":"Open Product Details page",
+    "2":"Increase or decrease quantity product",
    },
-  "Expected result":"User friendly error message - invalid email",
-  "Actual result":"Redirected to Check you email page where 5-digit confirmation code is required to resume"
+  "Expected result":"Quantity product increase when click on "+" button and decrease when click on "-" button",
+  "Actual result":"Quantity product increase when click on "-" button and decrease when click on "+" button "
 }
 
 
 {
   "Bug_id":"3",
   "Priorty":"Medium",
-  "Summary":"Already existing user can to create account again",
+  "Summary":"[Cart page] The full price displays as a Total price after user add any items from On Sale category",
   "Steps to reproduce":
   {
-    "1":"Go to https://web.gobrief.com",
-    "2":"Push Create account button",
-    "3":"Input test1.en@gmail.com in Enter your work email field",
-    "4":"Push Next button"
+    "1":"Go to On Sale category",
+    "2":"Add any item to the Cart",
+    "3":"Go to the Cart page",
+    "4":"Review the Total price"
    },
-  "Expected result":"User friendly error message - already existing user with this email address",
-  "Actual result":"User is redirected to Check you email page; asked to provide 5-digit confirmation code"
+  "Expected result":"The Total price should be discounted price",
+  "Actual result":"The Total price displays as a full price"
+}
+
+
+{
+"Bug_id": "4",
+"Priority": "Medium",
+"Summary":"[Checkout Page] The Promo Code field should NOT be case sensitive", 
+"Steps to reproduce":
+  {
+    "1":"Add any product to the Cart (not from Sale or New Arrivals)",
+    "2":"Go to Checkout",
+    "3":"Note, the Total price",
+    "4":"Enter promo code with all lowercase ("25off")",
+    "5":"Click on Apply button"
+   },
+ "Expected result":"The promo code should be count as valid",
+ "Actual result":"Error message "This promo code is not valid" appears"
+}
+
+
+{
+"Bug_id": "5",
+"Priority": "Medium",
+"Summary":"[Payment form] Not in color red error message when any required fields didn't fill out", 
+"Steps to reproduce":
+  {
+    "1":"Go to the Checkout page",
+    "2":"Fill out Payment form",
+    "3":"Leave fields is empty",
+    "4":"Click on Confirm order button"
+   },
+ "Expected result":"Error message "Please fill in the form" has red color",
+ "Actual result":"Error message "Please fill in the form" has black color"
 }
 
 
