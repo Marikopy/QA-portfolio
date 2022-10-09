@@ -1,1 +1,1 @@
-There is my QA portfolio.
+Hello. My name is Marina. I'm detail-oriented QA Engineer with 3+ years of experience in Mobile and Web app, working in a startup from the beginning phase in a project with great potential for success. This repo represents my skills in test documentation and Postman. 
