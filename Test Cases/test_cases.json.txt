@@ -1,63 +1,64 @@
 {
   "TestCase_id":"1",
-  "Title":"User should be able to create account with valid email ",
+  "Title":"Search should NOT be case sensitive",
   "Steps":
-  {
-   "1":"Go to https://web.gobrief.com",
-   "2":"Push Create account button",
-   "3":"Input test1.en@gmail.com in Enter your work email field",
-   "4":"Enter 5-digit confirmation code sent to email in Enter code field",
-   "5":"Input Name in Your Name field",
-   "6":"Input 'Test 1' in Project name field",
-   "7":"Push Next button"
-  },
-  "Expected result":"Successful user creation, redirected to app dashboard"
+  { 
+   "1":"Given user is on the Home Page",
+   "2":"When Search field is on a view",
+   },
+  "Expected result":"Then the Search field should NOT be case sensitive"
 }
+
 
 
 {
   "TestCase_id":"2",
-  "Title":"User shouldn't be able to create account with invalid email ",
+  "Title":"Placeholder should be available for Search field",
   "Steps":
   {
-    "1":"Go to https://web.gobrief.com",
-    "2":"Push Create account button",
-    "3":"Input o432414@yahoo.com in Enter your work email field",
-    "4":"Push Next button"
+    "1":"Given user is on the Home Page",
+    "2":"When Search field is on a view"
   },
-  "Expected result":"User friendly error message - invalid email"
+  "Expected result":"Then the placeholder should be available for Search field"
 }
 
 
 {
   "TestCase_id":"3",
-  "Title":"User shouldn't be able to create account with already existing user",
+  "Title":"The total price should reflect to the removing product from the Cart",
   "Steps":
   {
-  "1":"Go to https://web.gobrief.com",
-  "2":"Push Create account button",
-  "3":"Input test1.en@gmail.com in Enter your work email field",
-  "4":"Push Next button"
+  "1":"Given user is on the Cart page",
+  "2":"When there is at least one item in the Cart",
+  "3":"And user deletes the product from the Cart"
   },
-  "Expected result":"User friendly error message - already existing user with this email address"
+  "Expected result":"Then the Total price should reflect to the changes"
 }
 	
 
 {
   "TestCase_id":"4",
-  "Title":"User should be able to login with valid email",
+  "Title":"Verify that total price change when user change the product quantity",
   "Steps":
   {
-    "1":"Go to https://web.gobrief.com",
-    "2":"Push Sign in button",
-    "3":"Input valid email in Enter your email field",
-    "4":"Push Next button"
+    "1":"Given user is on Cart page",
+    "2":"When user clicks on + or - button"
   },
-  "Expected result":"Successful login, redirected to app dashboard"
+  "Expected result":"Then the total price changes depending on the quantity of products"
 }
 
 
-
+{
+  "TestCase_id": "5",
+  "Title": ""No items in the Cart" should display after user deletes last product from the Cart",
+  "Steps":
+ {
+  "1": "Given user is on the Cart",
+  "2": "When there is at least one product added",
+  "3": "And user deletes last product from the Cart"
+ },
+ "Expected result": "Then "No items in the Cart" message should display"
+}
 
 
 	
